@@ -21,6 +21,7 @@ import glob from 'glob';
 import path from 'path';
 
 import vueify from 'vueify';
+import aliasify from 'aliasify';
 
 
 const reload = browserSync.reload;
@@ -89,7 +90,13 @@ glob(devPath.js, (err, files) => {
             plugin: [watchify],
         })
         .transform(vueify)
-        .transform(babelify, {presets: ['es2015']});
+        .transform(babelify, {presets: ['es2015']})
+        .transform(aliasify, {
+            aliases: {
+                vue: 'vue/dist/vue.js'
+            },
+            verbose: false
+        });
 
         browserifyObjectArray.push({
             name: name,
