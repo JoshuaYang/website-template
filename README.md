@@ -119,6 +119,8 @@ loader.load({
 
 >   tip：引入后会自动对html标签添加相应class
 >
+>   若平台条件满足，则返回true，否则返回false
+>
 >   若检测结果为true，则添加className
 >
 >   若检测结果为false，则添加not-{className}；has-touch对应为no-touch
