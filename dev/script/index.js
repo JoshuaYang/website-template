@@ -37,9 +37,9 @@ function generateStruct() {
         container: document.getElementById('slider'), //dom
         prevBtn: document.getElementById('btn-prev'), //dom
         nextBtn: document.getElementById('btn-next'), //dom
-        // indicator: document.getElementById('indicator'), //dom
+        indicator: document.getElementById('indicator'), //dom
         // loop: false,
-        dragable: true,
+        dragable: false,
         currentIndex: 0,
         speed: 800, //ms
         interactiveSpeed: 300, //ms
