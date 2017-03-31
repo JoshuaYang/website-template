@@ -2,8 +2,7 @@ const path = require('path');
 const glob = require('glob');
 const webpack = require('webpack');
 const postcssConfig = require('./postcss.config.js');
-
-const fontPath = path.resolve(process.cwd(), 'dev/font');
+const fontRegex = /(font+\/)/;
 
 const jsFiles = glob.sync('./dev/script/*.js');
 const entry = {};
@@ -61,34 +60,24 @@ module.exports = {
             {
                 test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/,
                 use: [{
-                    loader: 'file-loader',
+                    loader: 'url-loader',
                     options: {
                         limit: 1024,
                         name: 'font/[name].[ext]',
                     },
                 }],
-                include: [
-                    fontPath,
-                ],
+                include: fontRegex,
             },
             {
-                test: /\.(jpg|jpeg|png|gif)$/,
+                test: /\.(jpg|jpeg|png|gif|svg)$/,
                 use: [{
                     loader: 'url-loader',
                     options: {
-                        mimetype: 'image/png',
+                        limit: 5120,
+                        name: 'image/[name].[ext]',
                     },
                 }],
-            },
-            {
-                test: /\.svg/,
-                use: [{
-                    loader: 'svg-url-loader',
-                    options: {
-                        limit: 10240,
-                        noquotes: true,
-                    },
-                }],
+                exclude: fontRegex,
             },
         ],
     },

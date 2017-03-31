@@ -1,7 +1,7 @@
 <template lang="html">
     <div class="app-container">
         <img src="../image/stuff.svg" alt="">
-
+        <img src="../image/1.jpg" alt="">
         <div class="container">
             <div class="item1"></div>
             <div class="item2"></div>
