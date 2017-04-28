@@ -1,12 +1,9 @@
 const path = require('path');
-const glob = require('glob');
 const webpack = require('webpack');
 const postcssConfig = require('./postcss.config.js');
 
 const fontRegex = /(font+\/)/;
 
-const jsFiles = glob.sync('./dev/script/*.js');
-const entry = {};
 const eslintLoader = {
     loader: 'eslint-loader',
     options: {
@@ -15,13 +12,9 @@ const eslintLoader = {
     },
 };
 
-jsFiles.forEach((file, i) => {
-    entry[path.basename(file, '.js')] = file;
-});
-
 module.exports = {
     entry: {
-        index: './dev/script/index.js',
+        index: path.join(process.cwd(), 'dev', 'script', 'index.js'),
     },
     output: {
         path: path.join(process.cwd(), 'dist'),
