@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const postcssConfig = require('./postcss.config.js');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const fontRegex = /(font+\/)/;
 
@@ -18,7 +19,7 @@ module.exports = {
     },
     output: {
         path: path.join(process.cwd(), 'dist'),
-        filename: '[name].js',
+        filename: '[name].[hash].js',
     },
     module: {
         rules: [
@@ -110,6 +111,16 @@ module.exports = {
             name: 'vendor',
             minChunks(module) {
                 return module.context && module.context.includes('node_modules');
+            },
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'index.html',
+            template: path.join(process.cwd(), 'dev', 'index.html'),
+            inject: true,
+            hash: true,
+            minify:{
+                removeComments: true,
+                collapseWhitespace: true,
             },
         }),
     ],
