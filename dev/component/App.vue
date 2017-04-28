@@ -20,6 +20,9 @@
 import Message from './Message.vue';
 import Controller from './Controller.vue';
 
+import moment from 'moment';
+console.log(moment().format());
+
 export default {
     components: {
         Message,

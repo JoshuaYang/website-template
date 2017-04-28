@@ -20,7 +20,9 @@ jsFiles.forEach((file, i) => {
 });
 
 module.exports = {
-    entry,
+    entry: {
+        index: './dev/script/index.js',
+    },
     output: {
         path: path.join(process.cwd(), 'dist'),
         filename: '[name].js',
@@ -109,6 +111,12 @@ module.exports = {
                 eslint: {
                     configFile: path.join(process.cwd(), '.eslintrc'),
                 },
+            },
+        }),
+        new webpack.optimize.CommonsChunkPlugin({
+            name: 'vendor',
+            minChunks(module) {
+                return module.context && module.context.includes('node_modules');
             },
         }),
     ],

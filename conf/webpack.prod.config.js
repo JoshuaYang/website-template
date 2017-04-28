@@ -31,7 +31,7 @@ module.exports = merge(baseWebpackConfig, {
             sourceMap: true,
             compress: {
                 warnings: false,
-                drop_console: true,
+                // drop_console: true,
             },
         }),
         new CopyWebpackPlugin([
