@@ -21,7 +21,7 @@ import Message from './Message.vue';
 import Controller from './Controller.vue';
 
 import moment from 'moment';
-console.log(moment().format());
+console.log('=====bbbccc=====', moment().format());
 
 export default {
     components: {
