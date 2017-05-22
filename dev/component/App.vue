@@ -50,7 +50,7 @@ export default {
     background-color: var(--color1);
 
     .stuff {
-        width: var(--stuffWidth);
+        width: 200px;
     }
 }
 
