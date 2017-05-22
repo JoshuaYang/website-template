@@ -9,8 +9,6 @@
             <div class="item4"></div>
         </div>
 
-        <div class="demo"></div>
-
         <message></message>
         <controller></controller>
 
@@ -21,9 +19,6 @@
 <script>
 import Message from './Message.vue';
 import Controller from './Controller.vue';
-
-import moment from 'moment';
-console.log('=====bbbccc=====', moment().format());
 
 export default {
     components: {
@@ -48,24 +43,6 @@ export default {
     :root{
         --color1: green;
     }
-}
-
-
-@function computeValue($baseValue, $useVW, $base, $percent) {
-    @return if($useVW, $baseValue * 1vw, $baseValue * $base * $percent * 1px);
-}
-
-@mixin generateStyle($useVW, $base: 3.2, $percent: 1) {
-    .demo {
-        width: computeValue(11.7, $useVW, $base, $percent);
-        height: computeValue(11.7, $useVW, $base, $percent);
-    }
-}
-
-@include generateStyle(false, 7);
-
-.demo {
-    background-color: red;
 }
 
 .app-container{
