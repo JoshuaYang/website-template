@@ -1,6 +1,6 @@
 <template lang="html">
     <div class="app-container">
-        <img src="../image/stuff.svg" alt="">
+        <img class="stuff" src="../image/stuff.svg" alt="">
 
         <div class="container">
             <div class="item1"></div>
@@ -36,7 +36,6 @@ export default {
 
 :root{
     --color1: red;
-    --color2: blue;
 }
 
 @media (max-width: 1000px) {
@@ -45,17 +44,17 @@ export default {
     }
 }
 
+
+
 .app-container{
-    // background-color: var(--color1);
+    background-color: var(--color1);
 
-    &:hover{
-        // background-color: var(--color2);
-    }
-
-    img{
-        width: 200px;
+    .stuff {
+        width: var(--stuffWidth);
     }
 }
+
+
 
 .container{
     display: grid;

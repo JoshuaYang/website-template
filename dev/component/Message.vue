@@ -22,7 +22,6 @@ export default {
         font-family: "Lato-Regular";
         font-size: 20px;
         color: blue;
-        transform: translateX(50px);
     }
 }
 </style>
