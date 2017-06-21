@@ -8,5 +8,6 @@ module.exports = {
             },
             browsers: ['> 5%'],
         }),
+        require('postcss-merge-rules'),
     ],
 };
