@@ -23,7 +23,6 @@
 - image：图片
 - script：脚本
 - style：样式
-- vendor：不参与合并输出的文件（可能需要手动创建该目录）
 - store：状态管理
 - router.js：路由配置
 
