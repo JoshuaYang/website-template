@@ -2626,6 +2626,10 @@ joshua-arrival-listener@^0.0.11:
   version "0.0.11"
   resolved "https://registry.yarnpkg.com/joshua-arrival-listener/-/joshua-arrival-listener-0.0.11.tgz#ab47c932adfa775fdc4953a49a934f2e8bae237d"
 
+joshua-picture-loader@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/joshua-picture-loader/-/joshua-picture-loader-0.0.3.tgz#63ec1adaa14447e14020e678ae029a823b47bee4"
+
 joshua-platform@^2.0.4:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/joshua-platform/-/joshua-platform-2.0.4.tgz#c2727e6c37898050e9c0ecbc2681f0305cc9c9d9"
