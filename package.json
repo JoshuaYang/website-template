@@ -47,7 +47,7 @@
   },
   "dependencies": {
     "joshua-arrival-listener": "^0.0.11",
-    "joshua-picture-loader": "^0.0.3",
+    "joshua-picture-loader": "^0.0.5",
     "joshua-platform": "^2.0.4",
     "vue": "^2.2.1",
     "vue-router": "^2.3.0",
