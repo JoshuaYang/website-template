@@ -13,8 +13,8 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../style/reset";
-@import "../style/mixin";
+@import "~style/reset";
+@import "~style/mixin";
 
 // @include font-face("Lato-Regular");
 

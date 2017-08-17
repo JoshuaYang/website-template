@@ -1,15 +1,16 @@
 <template lang="html">
     <div class="home">
-        <div class="stuff preload" data-source="../image/stuff.svg"></div>
+        <img class="stuff" src="~image/stuff.svg" alt="">
+        <!-- <div class="stuff preload" data-source="~image/stuff.svg"></div> -->
     </div>
 </template>
 
 <script>
-import PictureLoader from 'joshua-picture-loader';
+// import PictureLoader from 'joshua-picture-loader';
 
 export default {
     mounted() {
-        new PictureLoader().load();
+        // new PictureLoader().load();
     },
 };
 </script>

@@ -81,6 +81,9 @@ module.exports = {
     resolve: {
         alias: {
             vue$: 'vue/dist/vue.js',
+            root: path.join(process.cwd(), 'dev'),
+            style: path.join(process.cwd(), 'dev', 'style'),
+            image: path.join(process.cwd(), 'dev', 'image'),
         },
         extensions: ['.js', '.jsx'],
         modules: [
