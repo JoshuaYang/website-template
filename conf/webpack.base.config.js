@@ -52,6 +52,15 @@ module.exports = {
                     'css-loader',
                     'postcss-loader',
                     'sass-loader',
+                    {
+                        loader: 'sass-resources-loader',
+                        options: {
+                            resources: [
+                                path.resolve(process.cwd(), 'dev/style/_variable.scss'),
+                                path.resolve(process.cwd(), 'dev/style/_mixin.scss'),
+                            ],
+                        },
+                    },
                 ],
             },
             {
@@ -97,8 +106,23 @@ module.exports = {
                 vue: {
                     postcss: postcssConfig.plugins,
                     loaders: {
-                        sass: 'style-loader!css-loader!postcss-loader!sass-loader?indentedSyntax',
-                        scss: 'style-loader!css-loader!postcss-loader!sass-loader',
+                        // sass: 'style-loader!css-loader!postcss-loader!sass-loader?indentedSyntax',
+                        // scss: 'style-loader!css-loader!postcss-loader!sass-loader!sass-resources-loader',
+                        scss: [
+                            'style-loader',
+                            'css-loader',
+                            'postcss-loader',
+                            'sass-loader',
+                            {
+                                loader: 'sass-resources-loader',
+                                options: {
+                                    resources: [
+                                        path.resolve(process.cwd(), 'dev/style/_variable.scss'),
+                                        path.resolve(process.cwd(), 'dev/style/_mixin.scss'),
+                                    ],
+                                },
+                            },
+                        ],
                     },
                     cssModules: {
                         localIdentName: '[path][name]---[local]---[hash:base64:5]',
