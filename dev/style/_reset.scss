@@ -20,7 +20,7 @@ figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, t
 
 html{
     /* Prevent font scaling in landscape while allowing user zoom */
-    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
 
     /* fix font family display error on different browsers */
     -moz-osx-font-smoothing: grayscale;
@@ -48,5 +48,6 @@ a{
 
 .test {
     &:hover {
+        -webkit-transform: scale(1);
     }
 }

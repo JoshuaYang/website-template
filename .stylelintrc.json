@@ -36,6 +36,9 @@
         "time-min-milliseconds": null,
         "unit-blacklist": null,
         "unit-whitelist": null,
-        "value-no-vendor-prefix": true
+        "value-no-vendor-prefix": true,
+        "custom-property-pattern": null,
+        "property-blacklist": null,
+        "property-no-vendor-prefix": true
     }
 }
