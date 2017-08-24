@@ -47,7 +47,6 @@ a{
 }
 
 .test {
-    &:hover {
-        -webkit-transform: scale(1);
-    }
+    transform: scale(0);
 }
+
