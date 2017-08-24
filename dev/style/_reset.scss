@@ -12,7 +12,7 @@ figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, t
     border: 0;
     font-size: 0;
 
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     box-sizing: border-box;
     user-select: none;
     list-style: none;
@@ -42,11 +42,6 @@ a{
     }
 }
 
-:root {
-    --fff: 2px;
-}
-
 .test {
-    transform: scale(0);
+    width: 1px;
 }
-
