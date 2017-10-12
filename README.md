@@ -6,7 +6,7 @@
 
 ## 环境
 
-- 框架：vue
+- 框架：vue 
 - 样式：sass+postcss
 - 脚本：es6
 - 语法检测：ESLint
