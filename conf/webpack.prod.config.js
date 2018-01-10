@@ -10,6 +10,7 @@ const baseWebpackConfig = require('./webpack.base.config.js');
 
 module.exports = merge(baseWebpackConfig, {
     plugins: [
+        new webpack.optimize.ModuleConcatenationPlugin(),
         new CleanWebpackPlugin([
             'dist',
         ], {
