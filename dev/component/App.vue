@@ -19,7 +19,7 @@ export default {
 // @include font-face("Lato-Regular");
 
 :root{
-    --color1: red;
+    --color1: $color-test;
 }
 
 @media (max-width: 1000px) {
