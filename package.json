@@ -15,7 +15,7 @@
   "devDependencies": {
     "babel-core": "^6.23.1",
     "babel-eslint": "^8.2.1",
-    "babel-loader": "^6.3.2",
+    "babel-loader": "^7.1.2",
     "babel-plugin-transform-class-properties": "^6.23.0",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-plugin-transform-runtime": "^6.23.0",
@@ -24,7 +24,7 @@
     "babel-preset-stage-3": "^6.22.0",
     "clean-webpack-plugin": "^0.1.16",
     "copy-webpack-plugin": "^4.0.1",
-    "css-loader": "^0.26.2",
+    "css-loader": "^0.28.8",
     "eslint": "^3.16.1",
     "eslint-loader": "^1.6.3",
     "eslint-plugin-html": "^2.0.1",
