@@ -51,7 +51,7 @@
     "joshua-picture-loader": "^0.0.5",
     "joshua-platform": "^2.0.4",
     "vue": "^2.2.1",
-    "vue-router": "^2.3.0",
+    "vue-router": "^3.0.1",
     "vuex": "^2.2.1"
   }
 }
